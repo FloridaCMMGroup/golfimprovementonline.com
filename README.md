@@ -31,3 +31,7 @@ The site is a Cloudflare Worker named `golfimprovementonline-com`, set up like t
 | Get my free swing analysis | https://instantgolfimprovement.com/free-swing-analysis/ |
 | Explore the video courses | https://instantgolfimprovement.com/video-courses/ |
 | The book | https://instantgolfimprovement.com/products/the-6-pillars-to-golf-success/ |
+
+## Google Tag Manager
+
+Container `GTM-PV99CDBW` is loaded in the `<head>` of every page. The setup code is in `analytics.js` because the content security policy in `_headers` does not allow inline scripts; `_headers` also allows the Google Tag Manager and Google Analytics domains. If the container adds tags from other services (for example a Meta pixel), add their domains to `_headers` too. Keep these when applying a new client zip.
